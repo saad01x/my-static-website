@@ -1,107 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saad01x | Web Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FutureScape — Tomorrow's Tech Today</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #0f0f1a;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    header {
+      background: #1a1a2e;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #00ffe7;
+    }
+    header p {
+      color: #cfcfcf;
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+    nav {
+      background: #14141f;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #00ffe7;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    section h2 {
+      color: #00ffe7;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #1e1e2f;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: #ffffff;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #cfcfcf;
+      font-size: 0.95rem;
+    }
+    .features {
+      background: #14141f;
+      padding: 2rem;
+      border-radius: 12px;
+      margin-top: 3rem;
+    }
+    .features ul {
+      list-style: square;
+      padding-left: 1.5rem;
+    }
+    footer {
+      background: #1a1a2e;
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+      margin-top: 3rem;
+    }
+    .newsletter {
+      background: #1e1e2f;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      margin-top: 4rem;
+    }
+    .newsletter input[type="email"] {
+      padding: 0.7rem;
+      border-radius: 8px;
+      border: none;
+      margin-right: 1rem;
+      width: 250px;
+    }
+    .newsletter button {
+      padding: 0.7rem 1.5rem;
+      background-color: #00ffe7;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #0f0f1a;
+      cursor: pointer;
+    }
+    .newsletter button:hover {
+      background-color: #00ccba;
+    }
+  </style>
 </head>
-
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#">Saad01x</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Saad</h1>
-            <p>A passionate web developer creating modern, responsive, and user-friendly websites.</p>
-            <a href="#projects" class="cta-button">See My Work</a>
+  <header>
+    <h1>FutureScape</h1>
+    <p>Tomorrow's Tech Today — Discover the Future</p>
+  </header>
+  <nav>
+    <a href="#ai">AI</a>
+    <a href="#space">Space</a>
+    <a href="#gadgets">Gadgets</a>
+    <a href="#futurelife">Future Life</a>
+    <a href="#features">Features</a>
+    <a href="#newsletter">Newsletter</a>
+  </nav>
+  <main>
+    <section id="ai">
+      <h2>Artificial Intelligence</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>AI in Daily Life</h3>
+          <p>Explore how artificial intelligence is already shaping our daily routines — from smart assistants to predictive algorithms.</p>
         </div>
+        <div class="card">
+          <h3>Neural Networks Explained</h3>
+          <p>Dive into the fascinating mechanics of neural networks, the backbone of modern AI.</p>
+        </div>
+        <div class="card">
+          <h3>AI Ethics</h3>
+          <p>As machines learn, who is held accountable? Discover the ethics shaping our AI future.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <img src="https://via.placeholder.com/150" alt="Saad" class="profile-pic">
-            <div class="about-content">
-                <h2>About Me</h2>
-                <p>
-                    I’m a web developer with a strong background in creating user-centric websites. I specialize in front-end development and have experience working with HTML, CSS, JavaScript, React, and more. I believe in clean code and responsive designs that look great on any device.
-                </p>
-                <div class="skills">
-                    <h3>Skills</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Node.js</li>
-                        <li>Git & GitHub</li>
-                    </ul>
-                </div>
-            </div>
+    <section id="space">
+      <h2>Exploring Space</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Mars Colonization</h3>
+          <p>Humanity’s plans to step foot on Mars are closer than ever — here's what the journey might look like.</p>
         </div>
+        <div class="card">
+          <h3>Space Tourism</h3>
+          <p>From billionaires to the common traveler — a look at how space tourism is evolving.</p>
+        </div>
+        <div class="card">
+          <h3>Moon Bases</h3>
+          <p>Permanent habitats on the Moon may soon be a reality. See the latest designs and missions.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="project-cards">
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300" alt="Project 1">
-                <h3>Personal Portfolio</h3>
-                <p>Created with HTML, CSS, and JavaScript. A modern, responsive portfolio website to showcase my work and skills.</p>
-                <a href="https://github.com/saad01x/portfolio" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300" alt="Project 2">
-                <h3>Task Manager App</h3>
-                <p>A task management app built with React and Node.js. It allows users to add, update, and delete tasks.</p>
-                <a href="https://github.com/saad01x/task-manager" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300" alt="Project 3">
-                <h3>Weather App</h3>
-                <p>A weather forecasting app using OpenWeather API. Built with JavaScript and fetches real-time weather data.</p>
-                <a href="https://github.com/saad01x/weather-app" target="_blank">View Project</a>
-            </div>
+    <section id="gadgets">
+      <h2>Next-Gen Gadgets</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Wearable Tech</h3>
+          <p>Smartwatches, glasses, and even clothes — how wearable tech is changing how we live.</p>
         </div>
+        <div class="card">
+          <h3>Smart Homes</h3>
+          <p>From voice-activated ovens to AI security — smart homes are the future of comfort and safety.</p>
+        </div>
+        <div class="card">
+          <h3>Holographic Displays</h3>
+          <p>No more screens? Discover the cutting-edge of 3D holographic displays and virtual interfaces.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <section id="futurelife">
+      <h2>Future of Life</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Green Tech</h3>
+          <p>Explore how futuristic innovations are tackling climate change with renewable solutions.</p>
+        </div>
+        <div class="card">
+          <h3>Urban Living</h3>
+          <p>Smart cities and hyperloop transit — see how urban life is transforming through tech.</p>
+        </div>
+        <div class="card">
+          <h3>Biohacking</h3>
+          <p>Upgrade your biology with tech? The cutting-edge (and controversial) world of biohacking.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Saad01x | All Rights Reserved</p>
-        <div class="social-links">
-            <a href="https://github.com/saad01x" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/saad01x" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/saad01x" target="_blank">Twitter</a>
-        </div>
-    </footer>
+    <section id="features" class="features">
+      <h2>Website Features</h2>
+      <ul>
+        <li>Fully responsive layout</li>
+        <li>Dark mode design</li>
+        <li>Modular card components</li>
+        <li>Interactive hover effects</li>
+        <li>Newsletter subscription form</li>
+        <li>Extensible navigation system</li>
+        <li>Lightweight and fast</li>
+      </ul>
+    </section>
+
+    <section id="newsletter" class="newsletter">
+      <h2>Stay Updated</h2>
+      <p>Subscribe to receive the latest tech updates from FutureScape</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 FutureScape. All rights reserved. | Crafted with creativity ✨</p>
+  </footer>
 </body>
-
 </html>
