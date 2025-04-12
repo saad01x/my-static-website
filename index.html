@@ -1,31 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Website</title>
+    <title>Saad01x | Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Navigation Bar -->
     <header>
-        <h1>Welcome to My Website</h1>
         <nav>
-            <ul>
+            <div class="logo">
+                <a href="#">Saad01x</a>
+            </div>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id="about">
-        <h2>About</h2>
-        <p>This is a simple static website.</p>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Saad</h1>
+            <p>A passionate web developer creating modern, responsive, and user-friendly websites.</p>
+            <a href="#projects" class="cta-button">See My Work</a>
+        </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out at myemail@example.com</p>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <img src="https://via.placeholder.com/150" alt="Saad" class="profile-pic">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>
+                    I’m a web developer with a strong background in creating user-centric websites. I specialize in front-end development and have experience working with HTML, CSS, JavaScript, React, and more. I believe in clean code and responsive designs that look great on any device.
+                </p>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300" alt="Project 1">
+                <h3>Personal Portfolio</h3>
+                <p>Created with HTML, CSS, and JavaScript. A modern, responsive portfolio website to showcase my work and skills.</p>
+                <a href="https://github.com/saad01x/portfolio" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300" alt="Project 2">
+                <h3>Task Manager App</h3>
+                <p>A task management app built with React and Node.js. It allows users to add, update, and delete tasks.</p>
+                <a href="https://github.com/saad01x/task-manager" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300" alt="Project 3">
+                <h3>Weather App</h3>
+                <p>A weather forecasting app using OpenWeather API. Built with JavaScript and fetches real-time weather data.</p>
+                <a href="https://github.com/saad01x/weather-app" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 My Website</p>
+        <p>&copy; 2025 Saad01x | All Rights Reserved</p>
+        <div class="social-links">
+            <a href="https://github.com/saad01x" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/saad01x" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/saad01x" target="_blank">Twitter</a>
+        </div>
     </footer>
 </body>
+
 </html>
